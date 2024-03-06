@@ -39,6 +39,7 @@ class SbisDownloadPluginPage(BasePage):
         while not os.path.isfile('downloads/sbisplugin-setup-web.exe'):
             sleep(2)
         if os.path.isfile('downloads/sbisplugin-setup-web.exe'):
+            sleep(2)
             print("File download is completed")
         else:
             print("File download is not completed")
